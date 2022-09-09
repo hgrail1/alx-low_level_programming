@@ -1,21 +1,38 @@
 #include <stdio.h>
 /**
- *  * main - Entry point
- *   *
- *    * Return: Always 0 (Success)
- */
+   * main - Entry point
+     * Return: Always 0 (Success)
+   */
 int main(void)
-{
-	int z;
 
-	for (z = 48; z <= 57; z++)
+{
+
+	int n = '0';
+
+	while (n <= '9')
+
 	{
-		putchar(z);
+
+		putchar(n);
+
+		n++;
+
 	}
-	for (z = 97; z <= 102; z++)
+
+	n = 'a';
+
+	while (n <= 'f')
+
 	{
-		putchar(z)
+
+		putchar(n);
+
+		n++;
+
 	}
+
 	putchar('\n');
+
 	return (0);
+
 }
