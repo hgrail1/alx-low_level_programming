@@ -6,24 +6,23 @@
  *    * Description: print all aplhabet letters
  *     *
  *      * Return: Always 0 (Success)
- *      */
+ */
 
 int main(void)
 {
 		char alpha = 'a';
-			char alpha1 = 'A';
+		char alpha1 = 'A';
 
-				while (alpha <= 'z')
-						{
-									putchar(alpha);
-											alpha++;
-												}
-					while (alpha1 <= 'Z')
-							{
-										putchar(alpha1);
-												alpha1++;
-													}
-						putchar('\n');
-
-							return (0);
+		while (alpha <= 'z')
+		{
+			putchar(alpha);
+			alpha++;
+		}
+		while (alpha1 <= 'Z')
+		{
+			putchar(alpha1);
+			alpha1++;
+		}
+		putchar('\n');
+		return (0);
 }

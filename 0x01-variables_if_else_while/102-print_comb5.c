@@ -1,40 +1,35 @@
-#include<stdio.h>
-
+#include <stdio.h>
 /**
- *  * main - Entry Point
- *   * Description: Write a program that prints all possible
- *    * different combinations of two digits
- *     * Return: 0
- *      */
-
+  * main - loop through variables a,b,c printing digits
+  * Return: print to stdout all possible different combinations of three digits
+  **/
 int main(void)
 {
-		int firstDigit = 0, seconDigit;
+	int a = 0;
+	int b;
 
-			while (firstDigit <= 99)
-					{
-								seconDigit = firstDigit;
-										while (seconDigit <= 99)
-													{
-																	if (seconDigit != firstDigit)
-																					{
-																										putchar((firstDigit / 10) + 48);
-																														putchar((firstDigit % 10) + 48);
-																																		putchar(' ');
-																																						putchar((seconDigit / 10) + 48);
-																																										putchar((seconDigit % 10) + 48);
-
-																																														if (firstDigit != 98 || seconDigit != 99)
-																																																			{
-																																																									putchar(',');
-																																																														putchar(' ');
-																																																																		}
-																																																	}
-																				++seconDigit;
-																						}
-												++firstDigit;
-													}
+	while (a <= 98)
+	{
+		b = a + 1;
+		while (b <= 99)
+		{
+			putchar(a / 10 % 10 + '0');
+			putchar(a % 10 + '0');
+			putchar(' ');
+			putchar(b / 10 % 10 + '0');
+			putchar(b % 10 + '0');
+			if (a == 98 && b == 99)
+			{
 				putchar('\n');
-
-					return (0);
+			}
+			else
+			{
+				putchar(',');
+				putchar(' ');
+			}
+			b++;
+		}
+		a++;
+	}
+	return (0);
 }
