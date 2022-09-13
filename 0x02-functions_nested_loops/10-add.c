@@ -4,9 +4,10 @@
  *   * @a: an integer to add to b
  *    * @b: an integer to add to a
  *     * Return: Void.
- *      */
+ */
 
 int add(int a, int b)
+
 {
 		return (a + b);
 }
