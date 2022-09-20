@@ -1,4 +1,5 @@
 #include "main.h"
+#include "2-strlen.c"
 /**
    * puts2 - prints every other character starting with the first
     * character, followed by a new line.
